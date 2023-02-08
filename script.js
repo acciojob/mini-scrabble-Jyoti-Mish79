@@ -1,8 +1,6 @@
-//your code here
-let string = document.getElementById("string");
-let length = document.getElementById("length");
-string.addEventListener('keyup',()=>{
-    let str = string.value;
-    length.innerText = str.length;
+const textarea = document.getElementById("evaluatedText");
+const letterCountDisplay = document.getElementById("letterCount");
 
-})
+textarea.addEventListener("input", function() {
+  letterCountDisplay.textContent = textarea.value.length;
+});
